@@ -2,7 +2,7 @@
   "name": "ecommerce",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://V4ne4ek.github.io/e-shop",
+  "homepage": "https://v4ne4ek.github.io/e-shop",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
