@@ -13,7 +13,7 @@ function App() {
                 <Header/>
                 <main className='main'>
                     <Routes>
-                        <Route exact path='/' element={<Home />} />
+                        <Route path='/' element={<Home />} />
                         <Route path='/product/:id' element={<ProductCard />} />
                         <Route path='/about' element={<About />} />
                         <Route path='/contacts' element={<Contacts />} />
