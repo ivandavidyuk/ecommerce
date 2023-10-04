@@ -9,7 +9,7 @@ import { Contacts } from './pages/Contacts';
 function App() {
     return (
         <>
-            <Router basename='/e-shopgit '>
+            <Router basename='/e-shop'>
                 <Header/>
                 <main className='main'>
                     <Routes>
