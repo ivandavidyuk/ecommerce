@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+import { Home } from './pages/Home';
+import { ProductCard } from './pages/ProductCard';
+import { About } from './pages/About';
+import { Contacts } from './pages/Contacts';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Router basename='/e-shopgit '>
+                <Header/>
+                <main className='main'>
+                    <Routes>
+                        <Route exact path='/' element={<Home />} />
+                        <Route path='/product/:id' element={<ProductCard />} />
+                        <Route path='/about' element={<About />} />
+                        <Route path='/contacts' element={<Contacts />} />
+                    </Routes>
+                </main>
+                <Footer />
+            </Router>
+        </>
+    );
 }
 
 export default App;
